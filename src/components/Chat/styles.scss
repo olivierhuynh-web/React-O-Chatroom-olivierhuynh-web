@@ -1,0 +1,10 @@
+@use "../../styles/vars";
+
+.chat {
+  width: 500px;
+  background-color: vars.$lightColor;
+  margin: 0 auto;
+  height: 100vh;
+  // point de référence pour le positionnement de Form
+  position: relative;
+}

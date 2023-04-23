@@ -1,0 +1,54 @@
+@use "src/styles/vars";
+
+.settings {
+  position: fixed;
+  right: 0;
+  top: 0.5em;
+  padding: 1em;
+  display: flex;
+
+  &-toggle {
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: vars.$accentColor;
+    transition: 50ms;
+
+    &--open {
+      transform: rotate(45deg);
+    }
+
+    &:hover {
+      
+      color: vars.$accentColorLighter;
+      transform: scale(1.1);
+    }
+  }
+
+  &-form {
+    width: 100%;
+    margin-left: 0.8em;
+    transition: 50ms;
+    animation: grow 400ms ease-out;
+  }
+
+  &-submit {
+    width: 100%;
+    background-color: vars.$accentColor;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem;
+    font-size: 1.2em;
+    transition: 50ms;
+
+    &:hover {
+      background-color: vars.$accentColorLight;
+    }
+  }
+
+}

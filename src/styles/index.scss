@@ -1,0 +1,21 @@
+@use 'reset';
+@use 'vars';
+
+body {
+  font-family: sans-serif;
+  background-color: vars.$darkColor;
+}
+
+@keyframes grow {
+  0% {
+    opacity: 0%;
+    width: 0%;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 100%;
+    width: 100%;
+    transform: scale(1);
+  }
+}

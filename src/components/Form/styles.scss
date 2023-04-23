@@ -1,0 +1,29 @@
+@use "../../styles/vars";
+
+.form {
+  position: absolute;
+  bottom: 0;
+
+  left: 0;
+  right: 0;
+
+  .form-input {
+    height: vars.$inputHeight;
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    font-size: 1.2em;
+    padding-right: vars.$inputHeight;
+  }
+
+  .form-submit {
+    width: vars.$inputHeight;
+    height: vars.$inputHeight;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    padding: 0.7em 0 0.3em 0;
+    color: vars.$mediumColor;
+  }
+}

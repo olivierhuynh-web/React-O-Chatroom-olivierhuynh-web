@@ -1,0 +1,16 @@
+@use "src/styles/vars";
+
+.field {
+  margin: 2rem 0;
+
+  &-input {
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 1.2rem;
+
+    &:focus {
+      border-color: vars.$accentColorLighter;
+    }
+  }
+}
